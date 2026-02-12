@@ -86,7 +86,7 @@ allow="autoplay">
 
 <h1 id="response" class="hidden">
     YAAAAAAY 💘<br><br>
-    Lana, tu viens d'accepter d'être ma Valentine ❤️<br>
+    Lana, you will be my valentine ❤️<br>
     J’ai trop hâte de te revoir.
 </h1>
 
@@ -106,6 +106,10 @@ yesBtn.addEventListener("click", () => {
     document.querySelector(".container").style.display = "none";
     response.classList.remove("hidden");
 
+    // Lancer la musique ici
+    document.getElementById("musicPlayer").src =
+    "https://www.youtube.com/embed/VIDEO_ID?autoplay=1&loop=1&playlist=VIDEO_ID";
+
     setInterval(() => {
         const heart = document.createElement("div");
         heart.classList.add("heart");
@@ -119,7 +123,3 @@ yesBtn.addEventListener("click", () => {
         }, 3000);
     }, 300);
 });
-</script>
-
-</body>
-</html>
