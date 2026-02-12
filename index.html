@@ -64,18 +64,14 @@
         100% { transform: translateY(110vh); opacity: 0; }
     }
 
-    iframe {
-        display: none;
-    }
-</style>
-</head>
-<body>
-
-<!-- Musique YouTube autoplay -->
-<iframe width="0" height="0"
-src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&loop=1&playlist=r9QX91pAcso"
-frameborder="0"
-allow="autoplay">
+    <iframe 
+    id="musicPlayer"
+    width="0"
+    height="0"
+    src="https://www.youtube.com/embed/?autoplay=1&loop=1&playlist=r9QX91pAcso"
+    frameborder="0"
+    allow="autoplay"
+    allowfullscreen>
 </iframe>
 
 <div class="container">
